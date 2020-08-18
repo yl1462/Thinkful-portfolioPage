@@ -422,3 +422,22 @@ footer ol {
   width: 100px;
   margin: 20px auto;
 }
+
+a:link {
+  color: #121619;
+}
+
+/* visited link */
+a:visited {
+  color: #2d4739;
+}
+
+/* mouse over link */
+a:hover {
+  color: #12263a;
+}
+
+/* selected link */
+a:active {
+  color: #2997d8;
+}
