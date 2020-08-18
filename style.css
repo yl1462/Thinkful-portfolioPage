@@ -340,13 +340,17 @@ template {
   display: none;
 }
 
-/**
+/*
  * Add the correct display in IE 10.
  */
 
 [hidden] {
   display: none;
 }
+
+/*above are normalize.css
+everything below will be updated after flexbox
+*/
 
 header h1 {
   text-align: center;
@@ -381,6 +385,7 @@ body {
   background-color: #fffcf2;
 }
 
+/*pending for editing after responsive page lesson*/
 img {
   margin: 35px auto;
   width: 30%;
@@ -398,11 +403,12 @@ ol, ul {
   font-family: monospace;
 }
 
+/*more styling pending after googling*/
 footer {
   font-family: fantasy;
-
 }
 
+/*separated for future editing*/
 .intro,.about {
   margin: 0 auto;
   width: 75%;
@@ -413,6 +419,7 @@ footer h2 {
   text-align: center;
 }
 
+/*pending for more styling*/
 hr {
   text-align: center;
   width: 50%;
@@ -423,6 +430,7 @@ footer ol {
   margin: 20px auto;
 }
 
+/*link itself*/
 a:link {
   color: #121619;
 }
