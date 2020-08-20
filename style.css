@@ -340,7 +340,7 @@ template {
   display: none;
 }
 
-/*
+/**
  * Add the correct display in IE 10.
  */
 
@@ -348,67 +348,69 @@ template {
   display: none;
 }
 
-/*above are normalize.css
-everything below will be updated after flexbox
-*/
+/**above is normalize.css
+  *below is my css
+  */
+
+
+body {
+  background-color: #fffcf2;
+  
+}
 
 header h1 {
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  background-color: #fffcf2;
-  color: #0d3b66;
-  font-size: 75px;
-  padding-top: 25px;
+  color: #ffc759;
+  padding: 4vw;
   margin: 0px;
+  background-color: #0b132b;
 }
 
 header p {
   text-align: center;
   font-family: cursive, sans-serif;
-  background-color: #fffcf2;
-  color: #0d3b66;
-  font-size: 30px;
-  padding-top: 25px;
-  margin: 0px 0px 25px 0px;
+  color: #ffc759;
+  padding: 0 0 4vw 0;
+  margin: 0px;
+  background-color: #0b132b;
 }
 
 main section h2 {
   text-align: center;
   font-family: fantasy;
-  font-size: 40px;
+  font-size: 4vw;
 }
 
-body {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  background-color: #fffcf2;
-}
-
-/*pending for editing after responsive page lesson*/
 img {
-  margin: 35px auto;
+  margin: 0 auto 35px auto;
   width: 30%;
   display: block;
 }
 
+.img-bg {
+  background-color: #5d5f71;
+}
+
 p {
   text-align: left;
-  font-size: 20px;
+  font-size: 3vw;
   font-family: monospace;
 }
 
 ol, ul {
-  font-size: 20px;
+  font-size: 3vw;
   font-family: monospace;
 }
 
-/*more styling pending after googling*/
 footer {
   font-family: fantasy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
-/*separated for future editing*/
 .intro,.about {
   margin: 0 auto;
   width: 75%;
@@ -417,12 +419,13 @@ footer {
 footer h2 {
   margin-bottom: 0;
   text-align: center;
+  font-size: 4vw;
 }
 
-/*pending for more styling*/
 hr {
   text-align: center;
-  width: 50%;
+  width: 75%;
+  border: .5px solid
 }
 
 footer ol {
@@ -430,7 +433,6 @@ footer ol {
   margin: 20px auto;
 }
 
-/*link itself*/
 a:link {
   color: #121619;
 }
@@ -448,4 +450,46 @@ a:hover {
 /* selected link */
 a:active {
   color: #2997d8;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header h1 {
+    font-size: 75px;
+  }
+
+  header p {
+    font-size: 30px;
+  }
+
+  footer {
+    font-size: 25px;
+  }
+
+  footer h2 {
+    font-size: 45px;
+  }
+
+  ol, ul{
+    font-size: 25px;
+  }
+
+  main section h2 {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+}
+
+.list li{
+  margin-bottom: 15px;
 }
