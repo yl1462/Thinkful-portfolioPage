@@ -474,7 +474,6 @@ footer ol {
 
 form {
   padding-right: 6px;
-  /* Fixed small sizing issue on the right */
 }
 
 form input, form textarea {
@@ -489,6 +488,10 @@ form textarea {
 .item-double {
   flex: 2;
   margin: 1px 50px 15px 50px;
+}
+
+.contactFont {
+  font-size: 2.3vw;
 }
 
 /*responsive for screen above 800px wide*/
@@ -563,6 +566,10 @@ form textarea {
   /* selected link */
   header a:active {
     color: #c95c3a;
+  }
+
+  .contactFont {
+    font-size: 1.1vw;
   }
 
   footer a:link {
