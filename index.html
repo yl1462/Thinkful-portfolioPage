@@ -1,24 +1,37 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <title>Yuri Liang Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Normalize.css-->
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-      <header>
-        <h1 style="font-size:5vw;">Yuri Liang</h1>
-        <p style="font-size:3vw;">Fast Learning Software Engineer</p>
-        </header>
 
-    <main>
-      <article>
-        <div class="img-bg">
+<head>
+  <title>Yuri Liang Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Normalize.css-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header id="Home">
+    <h1>Yuri Liang</h1>
+    <p>Fast Learning Software Engineer</p>
+    <!--nav bar-->
+    <nav>
+      <ul id="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Who am I">Who am I</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--profile pic & brief intro-->
+    <article>
+      <div class="img-bg">
         <img src="image/portfolio.jpg" alt="picture of Yuri Liang">
-        </div>
-        <section class="intro">
+      </div>
+      <section class="intro">
+        <div id="Who am I">
           <h2>Hi! My name is Yuri Liang</h2>
           <p>I'm a software engineer living in San Antonio, Texas.</p>
           <p>As a former Mandarin Chinese teacher, I enjoy:</p>
@@ -28,32 +41,61 @@
             <li>growing together with my community, and voyaging in this digital era</li>
           </ul>
           <p>Please feel free take a look around my website, and contact me should you have any questions.</p>
-        </section>
-
-        <hr>
-
-        <section class="about">
-          <h2>About Yuri</h2>
-          <p>I'm originally from Tianjin, China. I came to states to pursue my MA in 2014.</p>
-          <p>I enjoyed my time at Oklahoma City University, then moved to Virginia to start my teaching career in 2016.</p>
-          <p>Fast forward to 2020, I realized that I really enjoy my time with technology, and would love to explore more behind the scene.</p>
-          <p>As a student at Thinkful, I couldn't be happier. I can feel my heart racing whenever I think about my future as a software engineer.</p>
-          <p>I trust my coding experience, work ethic and enthusiasm will well transfer into whatever the challenge you give to me.</p>
-        </section>
-      </article>
-    </main>
+        </div>
+      </section>
 
       <hr>
+      
+      <!--about my life, pending for update on my projects-->
+      <section class="about">
+        <div id="About">
+          <h2>About Yuri</h2>
+          <p>I'm originally from Tianjin, China. I came to states to pursue my MA in 2014.</p>
+          <p>I enjoyed my time at Oklahoma City University, then moved to Virginia to start my teaching career in 2016.
+          </p>
+          <p>Fast forward to 2020, I realized that I really enjoy my time with technology, and would love to explore more behind the scene.</p>
+          <p>As a student at Thinkful, I couldn't be happier. I can feel my heart racing whenever I think about my
+            future as a software engineer.</p>
+          <p>I trust my coding experience, work ethic and enthusiasm will well transfer into whatever the challenge you
+            give to me.</p>
+        </div>
+      </section>
+    </article>
+  </main>
 
-    <footer>
-      <h2>Contact Yuri</h2>
-        <ol class="list">
-          <li><a href="https://www.linkedin.com/in/weirui-liang-977519134" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/yl1462?tab=repositories" target="_blank">Github</a></li>
-          <li><a href="mailto:yliang1462@hotmail.com" target="_blank">yliang1462@hotmail.com</a></li>
-        </ol>
-    </footer>
+  <hr>
 
-    </body>
+  <!--links to contact ME-->
+  <footer>
+    <h2>Contact Yuri</h2>
+    <ol class="list">
+      <li><a href="https://www.linkedin.com/in/weirui-liang-977519134" target="_blank" style="text-decoration:none">LinkedIn</a></li>
+      <li><a href="https://github.com/yl1462?tab=repositories" target="_blank" style="text-decoration:none">Github</a></li>
+      <li>E-mail</li>
+    </ol>
+
+    <!-- Contact -->
+    <section>
+      <div id="Contact">
+         <div class="group">
+          <div class="item-double">
+            <form action="#" method="POST">
+              <label for="user-name">Name:</label>
+              <input id="user-name" type="text" name="name">
+
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email">
+
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
 
 </html>

@@ -355,41 +355,72 @@ template {
 
 body {
   background-color: #fffcf2;
-  
 }
 
+
+/*everything below is responsive, should be*/
 header h1 {
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: #ffc759;
-  padding: 4vw;
+  padding: 3vw;
   margin: 0px;
   background-color: #0b132b;
+  font-size: 4vw;
 }
 
 header p {
   text-align: center;
   font-family: cursive, sans-serif;
   color: #ffc759;
-  padding: 0 0 4vw 0;
+  padding: 0 0 2vw 0;
   margin: 0px;
   background-color: #0b132b;
+  font-size:2.5vw;
+}
+
+/*nav links*/
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #0b132b;
+  
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-family: cursive, sans-serif;
+  font-size: 1.1vw;
+  color: #ffc759;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 main section h2 {
   text-align: center;
   font-family: fantasy;
-  font-size: 4vw;
+  font-size: 3.1vw;
 }
 
+
+/*responsive sized profile pic*/
 img {
   margin: 0 auto 35px auto;
-  width: 30%;
+  width: 23%;
   display: block;
 }
 
 .img-bg {
-  background-color: #5d5f71;
+  background-color: #1c2541;
 }
 
 p {
@@ -398,6 +429,8 @@ p {
   font-family: monospace;
 }
 
+
+/*styling the ol & ul*/
 ol, ul {
   font-size: 3vw;
   font-family: monospace;
@@ -411,6 +444,7 @@ footer {
   padding: 10px;
 }
 
+/*styling class for the intro & about me section*/
 .intro,.about {
   margin: 0 auto;
   width: 75%;
@@ -419,40 +453,55 @@ footer {
 footer h2 {
   margin-bottom: 0;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3.1vw;
 }
 
 hr {
   text-align: center;
-  width: 75%;
+  width: 80%;
   border: .5px solid
 }
 
 footer ol {
   width: 100px;
   margin: 20px auto;
+  padding-left: 15px;
 }
 
-a:link {
-  color: #121619;
+.list li{
+  margin-bottom: 15px;
 }
 
-/* visited link */
-a:visited {
-  color: #2d4739;
+form {
+  padding-right: 6px;
+  /* Fixed small sizing issue on the right */
 }
 
-/* mouse over link */
-a:hover {
-  color: #12263a;
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-/* selected link */
-a:active {
-  color: #2997d8;
+form textarea {
+  height: 160px;
 }
 
+.item-double {
+  flex: 2;
+  margin: 1px 50px 15px 50px;
+}
+
+/*responsive for screen above 800px wide*/
 @media screen and (min-width: 800px) {
+  header nav ul {
+    align-items: center;
+  }
+
+  header nav ul li:last-child a {
+    margin-right: 20px;
+    padding-left: 10px;
+  }
+
   section {
     padding: 0 10%;
   }
@@ -462,34 +511,72 @@ a:active {
   }
 
   header h1 {
-    font-size: 75px;
+    font-size: 2.7vw;
+    padding: 1vw;
   }
 
   header p {
-    font-size: 30px;
+    font-size: 1.3vw;
+    padding: 0 0 1vw 0;
+  }
+
+  hr {
+    text-align: center;
+    width: 57%;
+    border: .5px solid
+  }
+
+  .intro,.about {
+    margin: 0 auto;
+    width: 55%;
   }
 
   footer {
-    font-size: 25px;
+    font-size: 1vw;
   }
 
   footer h2 {
-    font-size: 45px;
+    font-size: 2vw;
   }
 
   ol, ul{
-    font-size: 25px;
+    font-size: 1vw;
   }
 
   main section h2 {
-    font-size: 45px;
+    font-size: 2vw;
   }
 
   p {
-    font-size: 25px;
+    font-size: 1vw;
+  }
+
+  header a:link {
+    color: #ffc759;
+  }
+  
+  /* mouse over link */
+  header a:hover {
+    color: #73db8d;
+  }
+  
+  /* selected link */
+  header a:active {
+    color: #c95c3a;
+  }
+
+  footer a:link {
+    color: #000000;
+  }
+  
+  /* mouse over link */
+  footer a:hover {
+    color: #12263a;
+  }
+  
+  /* selected link */
+  footer a:active {
+    color: #2997d8;
   }
 }
 
-.list li{
-  margin-bottom: 15px;
-}
