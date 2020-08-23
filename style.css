@@ -4,23 +4,24 @@ body {
 
 
 /*everything below is responsive, should be*/
+header {
+  background-color: #0b132b;
+  color: #ffc759;
+}
+
 header h1 {
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
-  color: #ffc759;
   padding: 3vw;
   margin: 0px;
-  background-color: #0b132b;
   font-size: 4vw;
 }
 
 header p {
   text-align: center;
   font-family: cursive, sans-serif;
-  color: #ffc759;
   padding: 0 0 2vw 0;
   margin: 0px;
-  background-color: #0b132b;
   font-size:2.5vw;
 }
 
@@ -28,7 +29,6 @@ header p {
 header nav {
   display: flex;
   justify-content: center;
-  background-color: #0b132b;
 }
 
 header nav ul {
@@ -41,7 +41,7 @@ header nav ul li a {
   margin-right: 50px;
   text-decoration: none;
   font-family: cursive, sans-serif;
-  font-size: 1.1vw;
+  font-size: 2vw;
   color: #ffc759;
 }
 
@@ -147,11 +147,6 @@ form textarea {
 
   .group {
     flex-direction: row;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
   }
 
   header h1 {
