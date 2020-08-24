@@ -14,7 +14,7 @@ header h1 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   padding: 3vw;
   margin: 0px;
-  font-size: 4vw;
+  font-size: 21px;
 }
 
 header p {
@@ -22,7 +22,7 @@ header p {
   font-family: cursive, sans-serif;
   padding: 0 0 1vw 0;
   margin: 0px;
-  font-size:2.5vw;
+  font-size:16px;
 }
 
 /*nav links*/
@@ -41,7 +41,7 @@ header nav ul li a {
   margin-right: 50px;
   text-decoration: none;
   font-family: cursive, sans-serif;
-  font-size: 2vw;
+  font-size: 13px;
   color: #ffc759;
 }
 
@@ -52,7 +52,7 @@ header nav ul li:last-child a {
 main section h2 {
   text-align: center;
   font-family: fantasy;
-  font-size: 3.1vw;
+  font-size: 16px;
 }
 
 
@@ -67,16 +67,20 @@ img {
   background-color: #1c2541;
 }
 
-p {
+h3, p {
   text-align: left;
-  font-size: 3vw;
+  font-size: 14px;
   font-family: monospace;
 }
 
+.portHr {
+  width: 100%;
+  border: dotted;
+}
 
 /*styling the ol & ul*/
 ol, ul {
-  font-size: 3vw;
+  font-size: 14px;
   font-family: monospace;
 }
 
@@ -97,7 +101,7 @@ footer {
 footer h2 {
   margin-bottom: 0;
   text-align: center;
-  font-size: 3.1vw;
+  font-size: 16px;
 }
 
 hr {
@@ -136,7 +140,7 @@ form textarea {
 }
 
 .contactFont {
-  font-size: 2.3vw;
+  font-size: 14px;
 }
 
 /*responsive for screen above 800px wide*/
@@ -156,16 +160,20 @@ form textarea {
   }
 
   header h1 {
-    font-size: 2.7vw;
+    font-size: 27px;
     padding: 1.3vw;
   }
 
   header p {
-    font-size: 1.3vw;
+    font-size: 23px;
   }
 
   header nav ul {
     align-items: center;
+  }
+
+  header nav ul li a {
+    font-size: 21px;
   }
 
   header nav ul li:last-child a {
@@ -185,23 +193,23 @@ form textarea {
   }
 
   footer {
-    font-size: 1vw;
+    font-size: 27px;
   }
 
   footer h2 {
-    font-size: 2vw;
+    font-size: 27px;
   }
 
   ol, ul{
-    font-size: 1vw;
+    font-size: 23px;
   }
 
   main section h2 {
-    font-size: 2vw;
+    font-size: 27px;
   }
 
-  p {
-    font-size: 1vw;
+  h3, p {
+    font-size: 23px;
   }
 
   header a:link {
@@ -217,7 +225,9 @@ form textarea {
   }
 
   .contactFont {
-    font-size: 1.1vw;
+    font-size: 23px;
+    width: 61%;
+    align-self: center;
   }
 
   footer a:link {
