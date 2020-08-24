@@ -1,57 +1,151 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <title>Yuri Liang Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!--Normalize.css-->
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-      <header>
-        <h1>Yuri Liang</h1>
-        <p>Fast Learning Software Engineer</p>
-        </header>
 
-    <main>
-      <article>
+<head>
+  <title>Yuri Liang Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Normalize.css-->
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header id="Home">
+    <div>
+      <h1>Yuri Liang</h1>
+      <p>Fast Learning Software Engineer</p>
+    </div>
+    <!--nav bar-->
+    <nav>
+      <ul id="menu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--profile pic & brief intro-->
+    <article>
+      <div class="img-bg">
         <img src="image/portfolio.jpg" alt="picture of Yuri Liang">
-
-        <section class="intro">
+      </div>
+      <section class="intro">
+        <div>
           <h2>Hi! My name is Yuri Liang</h2>
-          <p>I'm a software engineer living in San Antonio, Texas</p>
+          <p>I'm a software engineer living in San Antonio, Texas.</p>
           <p>As a former Mandarin Chinese teacher, I enjoy:</p>
-          <ul>
+          <ul class="list">
             <li>thinking about the solutions I could have had when I was teaching online</li>
             <li>sharing new technical solutions with my teacher friends</li>
             <li>growing together with my community, and voyaging in this digital era</li>
           </ul>
           <p>Please feel free take a look around my website, and contact me should you have any questions.</p>
-        </section>
-
-        <hr>
-
-        <section class="about">
-          <h2>About Yuri</h2>
-          <p>I'm originally from Tianjin, China. I came to states to pursue my MA in 2014.</p>
-          <p>I enjoyed my time at Oklahoma City University, then moved to Virginia to start my teaching career in 2016.</p>
-          <p>Fast forward to 2020, I realized that I really enjoy my time with technology, and would love to explore more behind the scene.</p>
-          <p>As a student at Thinkful, I couldn't be happier. I can feel my heart racing whenever I think about my future as a software engineer.</p>
-          <p>I trust my coding experience, work ethic and enthusiasm will well transfer into whatever the challenge you give to me.</p>
-        </section>
-      </article>
-    </main>
+        </div>
+      </section>
 
       <hr>
 
-    <footer>
-      <h2>Contact Yuri</h2>
-        <ol>
-          <li>LinkedIn</li>
-          <li>Github</li>
-        </ol>
-    </footer>
+      <!--about my life, pending for update on my projects-->
+      <section class="about">
+        <div id="About">
+          <h2>About Yuri</h2>
+          <p>I've been working as a teacher my whole life. As much as I enjoyed it, I want to change it. Improve how
+            people learn through technology.</p>
+          <p>I've always enjoyed utlizing technology in my classroom and daily life, for its efficiency and conveniency.
+            I love cooking, with the help of online cooking guide, it's like the chef is there to help me step by step.
+            I also spend a lot of time on reading, carrying my tablet with me everywhere is much easier than the entire
+            libary at home.</p>
+          <p>Now, as a student at Thinkful, I couldn't be happier and motivated to explore behind the "scence". I can
+            feel my heart beat racing whenever I think about working as a software engineer in the future.</p>
+          <p>I trust my coding experience, work ethic and enthusiasm will well transfer into whatever the challenge you
+            give to me.</p>
+          <p>Offering Services:</p>
+          <ul class="list">
+            <li>Front-end developer</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>web apps</li>
+            <li>web services</li>
+          </ul>
+        </div>
+      </section>
 
-    </body>
+      <hr>
+
+      <!--portfolio holder-->
+      <section class="about">
+        <div id="Portfolio">
+          <h2>Portfolio</h2>
+          <h3>Pending for future assignment 1</h3>
+          <p>Description that explains what the app does, who it's for, why you built it.</p>
+          <img src="https://fusionpilatesasheville.com/wp-content/uploads/2016/07/ComingSoon.jpg"
+            alt="future assignment coming soon">
+          <p>List of skills/tech used:</p>
+          <ul class="list">
+            <li>skills</li>
+            <li>tech</li>
+            <li>...</li>
+          </ul>
+          <a href="#" target="_blank" style="text-decoration:none">Link to its GitHub repo</a><br>
+          <a href="#" target="_blank" style="text-decoration:none">Link to the live app</a>
+          <hr class="portHr">
+          <h3>Pending for future assignment 2</h3>
+          <p>Description that explains what the app does, who it's for, why you built it.</p>
+          <img src="https://fusionpilatesasheville.com/wp-content/uploads/2016/07/ComingSoon.jpg"
+            alt="future assignment coming soon">
+          <p>List of skills/tech used:</p>
+          <ul class="list">
+            <li>other skills</li>
+            <li>other tech</li>
+            <li>...</li>
+          </ul>
+          <a href="#" target="_blank" style="text-decoration:none">Link to its GitHub repo 2</a><br>
+          <a href="#" target="_blank" style="text-decoration:none">Link to the live app 2</a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <hr>
+
+  <!--links to contact ME-->
+  <footer>
+    <h2>Contact Yuri</h2>
+    <ol class="list">
+      <li><a href="https://www.linkedin.com/in/weirui-liang-977519134" target="_blank"
+          style="text-decoration:none">LinkedIn</a></li>
+      <li><a href="https://github.com/yl1462?tab=repositories" target="_blank" style="text-decoration:none">Github</a>
+      </li>
+      <li><a href="mailto:yliang1462@hotmail.com" target="_blank">yliang1462@hotmail.com</a></li>
+    </ol>
+
+    <!-- Contact -->
+    <section class="contactFont">
+      <div id="Contact">
+        <div class="group">
+          <div class="item-double">
+            <form action="https://formspree.io/xgenbrgo" method="POST" enctype="multipart/form-data">
+              <label for="user-name">Name:</label>
+              <input id="user-name" type="text" name="name">
+
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email">
+
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
 
 </html>
