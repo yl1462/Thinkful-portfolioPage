@@ -226,6 +226,8 @@ form textarea {
 
   .contactFont {
     font-size: 23px;
+    width: 61%;
+    align-self: center;
   }
 
   footer a:link {
