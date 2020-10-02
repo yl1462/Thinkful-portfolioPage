@@ -241,5 +241,9 @@ form textarea {
   footer a:active {
     color: #2997d8;
   }
+
+  #GREImg {
+    width: 75%;
+  }
 }
 
